@@ -25,15 +25,13 @@ export default function FeatureSplitSection({
     <section id={id} className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className={`grid md:grid-cols-2 gap-12 md:gap-16 items-center ${
-            reversed ? "md:direction-rtl" : ""
-          }`}
+          className={`grid md:grid-cols-2 gap-12 md:gap-16 items-center`}
         >
           {/* Content */}
           <AnimatedReveal
             direction={reversed ? "right" : "left"}
             delay={index * 0.05}
-            className={reversed ? "md:order-2 md:direction-ltr" : "md:direction-ltr"}
+            className={reversed ? "md:order-2" : ""}
           >
             <span className="text-4xl mb-4 block">{icon}</span>
             <p className="text-sm text-lake-400 font-medium mb-2">{subtitle}</p>
@@ -55,7 +53,7 @@ export default function FeatureSplitSection({
           <AnimatedReveal
             direction={reversed ? "left" : "right"}
             delay={index * 0.05 + 0.1}
-            className={reversed ? "md:order-1 md:direction-ltr" : "md:direction-ltr"}
+            className={reversed ? "md:order-1" : ""}
           >
             <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-surface-raised to-surface border border-border flex items-center justify-center overflow-hidden">
               <div className="text-center p-8">
