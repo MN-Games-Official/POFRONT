@@ -117,7 +117,7 @@ export default function Navbar() {
             >
               {NAV_ITEMS.map((item, i) => (
                 <motion.div
-                  key={item.href}
+                  key={`mobile-${item.href}`}
                   initial={{ x: -20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.15 + i * 0.05 }}

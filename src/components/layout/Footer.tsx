@@ -81,7 +81,7 @@ export default function Footer() {
               <h4 className="text-sm font-semibold text-text-primary mb-4">Legal</h4>
               <ul className="space-y-2.5">
                 {FOOTER_LINKS.legal.map((link) => (
-                  <li key={link.href}>
+                  <li key={link.label}>
                     <Link
                       href={link.href}
                       className="text-sm text-text-muted hover:text-text-secondary transition-colors"
